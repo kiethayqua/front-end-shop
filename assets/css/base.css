@@ -1,0 +1,40 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+/* Tất cả các thẻ kế thừa giá trị của thuộc tính box-sizing*/
+*{
+    box-sizing: inherit;
+}
+
+html{
+    /* Khi sử dụng đơn vị rem <=> 1rem = 10px */
+    font-size: 62.5%;
+
+    /* Chiều cao 1 dòng */
+    line-height: 1.6rem;
+
+    font-family: 'Roboto', sans-serif;
+    
+    /* tất cả các box con trong html không đổi kích thước khi tăng padding hay border */
+    box-sizing: border-box;
+}
+
+/* Chuẩn bị cho Reponsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    /* Muốn dàn item ngang và tự động xuống dòng khi thu nhỏ kích thước */
+    display: flex;
+    flex-wrap: wrap;
+}
